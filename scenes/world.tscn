@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://whqpeblsnatj"]
+
+[ext_resource type="PackedScene" uid="uid://xyl3f812836a" path="res://scenes/world_environment.tscn" id="1_512yd"]
+[ext_resource type="PackedScene" uid="uid://bqgb7c48fbdtx" path="res://scenes/static_body_2d.tscn" id="1_lnmcm"]
+[ext_resource type="PackedScene" uid="uid://7nqruowjct86" path="res://scenes/player.tscn" id="2_ry85a"]
+[ext_resource type="PackedScene" uid="uid://cqeaudn1lrf1p" path="res://scenes/progress_bar.tscn" id="5_gbcfi"]
+
+[node name="world" type="Node2D"]
+
+[node name="WorldEnvironment" parent="." instance=ExtResource("1_512yd")]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("1_lnmcm")]
+position = Vector2(237, 478)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("1_lnmcm")]
+position = Vector2(94, 619)
+scale = Vector2(20, 1)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("1_lnmcm")]
+position = Vector2(374, 38)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("1_lnmcm")]
+position = Vector2(463, 351)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("1_lnmcm")]
+position = Vector2(707, 477)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("1_lnmcm")]
+position = Vector2(739, 273)
+
+[node name="player" parent="." instance=ExtResource("2_ry85a")]
+position = Vector2(219, 360)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="WaterTank" parent="CanvasLayer" instance=ExtResource("5_gbcfi")]
+offset_left = 38.0
+offset_top = 22.0
+offset_right = 42.0
+offset_bottom = 49.0
+tooltip_text = "Watertank Level"

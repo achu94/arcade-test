@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://ww7li34x1kgs"]
+
+[ext_resource type="Script" path="res://scripts/bullet.gd" id="1_ph31t"]
+[ext_resource type="Texture2D" uid="uid://bvybsofi4f63n" path="res://icon.svg" id="1_ygrpj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_so4e3"]
+radius = 8.0
+
+[node name="Bullet" type="RigidBody2D"]
+mass = 10.0
+script = ExtResource("1_ph31t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.88, 0.88)
+shape = SubResource("CircleShape2D_so4e3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.120002, -0.12)
+texture = ExtResource("1_ygrpj")
+
+[node name="Disapier" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Disapier" to="." method="_on_disapier_timeout"]

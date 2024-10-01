@@ -1,0 +1,13 @@
+res://scenes/world.tscn
+res://gun.tscn
+res://scenes/player.tscn
+res://scenes/bullet.tscn
+res://scenes/world_environment.tscn
+res://scenes/gun.tscn
+res://scripts/game_master.gd
+res://scripts/PlayerStats.gd
+res://scripts/gun.gd
+res://scripts/bullet.gd
+res://scenes/main.gd
+res://scenes/progress_bar.tscn
+res://scenes/watertank.gd

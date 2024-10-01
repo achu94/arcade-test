@@ -1,0 +1,10 @@
+TextureProgressBar
+ProgressBar
+CanvasLayer
+Timer
+WorldEnvironment
+RigidBody2D
+Sprite2D
+CollisionShape2D
+CharacterBody2D
+StaticBody2D

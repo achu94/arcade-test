@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqeaudn1lrf1p"]
+
+[ext_resource type="Texture2D" uid="uid://c5q1lwnx0s025" path="res://assets/GUI Interface Kit Free/GUI Interface Kit Free/PNG/GUI-Kit-Pack-Free_59.png" id="1_g1php"]
+[ext_resource type="Script" path="res://scenes/watertank.gd" id="1_lmkof"]
+
+[node name="WaterTank" type="TextureProgressBar"]
+offset_left = 40.0
+offset_top = 42.0
+offset_right = 391.0
+offset_bottom = 126.0
+scale = Vector2(0.400001, 0.400001)
+rounded = true
+texture_progress = ExtResource("1_g1php")
+script = ExtResource("1_lmkof")

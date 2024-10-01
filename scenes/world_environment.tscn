@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://xyl3f812836a"]
+
+[sub_resource type="Sky" id="Sky_g36fm"]
+
+[sub_resource type="Environment" id="Environment_tb2uc"]
+background_mode = 2
+sky = SubResource("Sky_g36fm")
+sky_custom_fov = 58.7
+
+[node name="WorldEnvironment" type="WorldEnvironment"]
+environment = SubResource("Environment_tb2uc")
